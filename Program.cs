@@ -6,20 +6,12 @@ namespace Variables
     {
         static void Main(string[] args)
         {
-            try
-            {
-                var number = "1234";
-                byte b = Convert.ToByte(number);
-                System.Console.WriteLine(b);
-                
-            }
-            catch (System.Exception)
-            {
-                System.Console.WriteLine("The number could not be converted into a byte.");
-                
-                throw;
-            }
+            var a = 1;
+            var b = 2;
+            var c = 3;
+
+            System.Console.WriteLine(!(c > b || c == a));
+        }
 
         }
     }
-}
