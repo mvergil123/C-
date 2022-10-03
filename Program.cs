@@ -6,7 +6,20 @@ namespace Variables
     {
         static void Main(string[] args)
         {
-            const float Pi = 3.14f;
+            try
+            {
+                var number = "1234";
+                byte b = Convert.ToByte(number);
+                System.Console.WriteLine(b);
+                
+            }
+            catch (System.Exception)
+            {
+                System.Console.WriteLine("The number could not be converted into a byte.");
+                
+                throw;
+            }
+
         }
     }
 }
